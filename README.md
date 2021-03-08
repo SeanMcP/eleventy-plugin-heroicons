@@ -1,5 +1,9 @@
 # `eleventy-plugin-heroicons`
 
+[![npm](https://img.shields.io/npm/v/eleventy-plugin-heroicons.svg)](https://npmjs.com/package/eleventy-plugin-heroicons) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/eleventy-plugin-heroicons.svg)](https://npmjs.com/package/eleventy-plugin-heroicons) [![npm](https://img.shields.io/npm/dt/eleventy-plugin-heroicons.svg)](https://npmjs.com/package/eleventy-plugin-heroicons)
+
+🛡 Shortcodes to add [Heroicons](https://heroicons.com/) to your [Eleventy](https://11ty.dev) projects
+
 ## Get started
 
 Install the package:
@@ -47,3 +51,7 @@ Args: `name: string`, `alt?: string`
 
 - `className?: string` Adds a class to all heroicons
 - `errorOnMissing: boolean` (default: `false`) Throw an error when passed an invalid style/name
+
+## License
+
+[MIT](./LICENSE) © [Sean McPherson](https://seanmcp.com)
