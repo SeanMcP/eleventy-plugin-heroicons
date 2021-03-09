@@ -64,6 +64,34 @@ module.exports = eleventyConfig => {
 }
 ```
 
+## Styling
+
+The `svg` element receives two data attributes that you can use for styling:
+
+- `data-heroicon-name="string"`
+- `data-heroicon-style="(outline|solid)"`
+
+You could add the following to your stylesheets:
+
+```css
+/* Solid icons */
+[data-heroicon-style="solid"] {
+    width: 20px;
+}
+
+/* Arrow down icon */
+[data-heroicon-name="arrow-down"] {
+    color: darkgreen;
+}
+
+/* All icons */
+[data-heroicon-name] {
+    padding: 2ch;
+}
+```
+
+If you passed a `className` to the configuration object, then you could use that to select all icons.
+
 ## License
 
 [MIT](./LICENSE) © [Sean McPherson](https://seanmcp.com)
