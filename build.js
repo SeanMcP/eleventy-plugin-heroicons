@@ -3,10 +3,8 @@ const fs = require("fs");
 const CONTENTS = {
   OUTLINE: {},
   SOLID: {},
-  SHARED: {
-    head: "",
-    tail: "",
-  },
+  HEAD: {},
+  TAIL: ""
 };
 
 const subDirs = ["outline", "solid"];
@@ -20,11 +18,11 @@ subDirs.forEach((subDir) => {
   fileNames.forEach((filename) => {
     const contents = fs.readFileSync(path + filename).toString().trimEnd();
     const lines = contents.split("\n");
-    if (!CONTENTS.SHARED.head) {
-      CONTENTS.SHARED.head = lines[0];
+    if (!CONTENTS.HEAD[subDir]) {
+      CONTENTS.HEAD[subDir] = lines[0];
     }
-    if (!CONTENTS.SHARED.tail) {
-      CONTENTS.SHARED.tail = lines[lines.length - 1];
+    if (!CONTENTS.TAIL) {
+      CONTENTS.TAIL = lines[lines.length - 1];
     }
     const guts = lines.slice(1, lines.length - 1).join("").replace(/\ \ /g, '');
     object[filename.slice(0, -4)] = guts;

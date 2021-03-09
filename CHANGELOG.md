@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Use correct `svg` attributes for outline and solid icons
+
 ## [0.1.0] - 2021-03-08
 
 Initial release

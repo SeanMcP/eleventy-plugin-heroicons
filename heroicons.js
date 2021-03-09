@@ -40,7 +40,7 @@ module.exports = function heroicons(eleventyConfig, config = initialConfig) {
           config.className,
           name,
           style
-        )}${contents}${ICONS.SHARED.tail}`;
+        )}${contents}${ICONS.TAIL}`;
     }
     
   eleventyConfig.addShortcode("heroicon", function(style, name, alt) {
@@ -56,7 +56,7 @@ module.exports = function heroicons(eleventyConfig, config = initialConfig) {
 
 function head(alt, className, iconName, iconStyle) {
   return (
-    ICONS.SHARED.head.slice(0, -1) +
+    ICONS.HEAD[iconStyle].slice(0, -1) +
     (alt ? "" : ` aria-hidden="true"`) +
     (className ? ` class="${className}"` : '') +
     ` data-heroicon-name="${iconName}" data-heroicon-style="${iconStyle}"` +
