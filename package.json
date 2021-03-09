@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "node build.js",
-    "test": "eleventy --config test/.eleventy.js --input test/ --output test/runs/"
+    "test": "eleventy --config test/.eleventy.js --input test/ --output test/runs/",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "eleventy-plugin",

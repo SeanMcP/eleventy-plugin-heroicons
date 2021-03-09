@@ -52,6 +52,18 @@ Args: `name: string`, `alt?: string`
 - `className?: string` Adds a class to all heroicons
 - `errorOnMissing: boolean` (default: `false`) Throw an error when passed an invalid style/name
 
+Pass the configuration object when adding the plugin:
+
+```js
+// .eleventy.js
+module.exports = eleventyConfig => {
+    eleventyConfig.addPlugin(require('eleventy-plugin-heroicons'), {
+        className: 'icon',
+        errorOnMissing: true
+    });
+}
+```
+
 ## License
 
 [MIT](./LICENSE) © [Sean McPherson](https://seanmcp.com)
