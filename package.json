@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-heroicons",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Shortcodes to add Heroicons to your Eleventy projects",
   "main": "heroicons.js",
   "files": [
