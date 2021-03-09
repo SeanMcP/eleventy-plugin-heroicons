@@ -23,7 +23,9 @@ module.exports = eleventyConfig => {
 
 ## Usage
 
-This plugin adds three shortcodes: `heroicon`, `heroicon-outline`, and `heroicon-solid`.
+This plugin adds three shortcodes: `heroicon`, `heroicon_outline`, and `heroicon_solid`.
+
+**Note**: These examples use Liquid template syntax, which is the default for Eleventy. If you are using another template engine like Nunjucks, the syntax might be slightly different.
 
 ### `heroicon`
 
@@ -34,7 +36,7 @@ Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`
 {% heroicon "solid" "x" "Close menu" %}
 ```
 
-### `heroicon-outline`/`heroicon-solid`
+### `heroicon_outline`/`heroicon_solid`
 
 **⚠️ Warning**: These APIs are subject to change in future releases.
 
@@ -43,8 +45,8 @@ These wrap the `heroicon` shortcode and pass a style.
 Args: `name: string`, `alt?: string`
 
 ```md
-{% heroicon-outline "x" "Close menu" %}
-{% heroicon-solid "archive" %}
+{% heroicon_outline "x" "Close menu" %}
+{% heroicon_solid "archive" %}
 ```
 
 ## Configuration

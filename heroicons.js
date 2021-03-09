@@ -46,10 +46,10 @@ module.exports = function heroicons(eleventyConfig, config = initialConfig) {
   eleventyConfig.addShortcode("heroicon", function(style, name, alt) {
       return heroicon(this, style, name, alt)
   });
-  eleventyConfig.addShortcode("heroicon-outline", function(name, alt) {
+  eleventyConfig.addShortcode("heroicon_outline", function(name, alt) {
       return heroicon(this, 'outline', name, alt)
   });
-  eleventyConfig.addShortcode("heroicon-solid", function(name, alt) {
+  eleventyConfig.addShortcode("heroicon_solid", function(name, alt) {
       return heroicon(this, 'solid', name, alt)
   });
 };
