@@ -36,6 +36,8 @@ Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`
 
 ### `heroicon-outline`/`heroicon-solid`
 
+**⚠️ Warning**: These APIs are subject to change in future releases.
+
 These wrap the `heroicon` shortcode and pass a style.
 
 Args: `name: string`, `alt?: string`

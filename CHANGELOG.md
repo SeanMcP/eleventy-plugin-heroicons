@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Tests for nunjucks and liquid
+- Warning about `heroicon-*` shortcodes to README
+
 ### Fixed
 
 - Use correct `svg` attributes for outline and solid icons
