@@ -1,8 +1,4 @@
----
-permalink: liquid.html
----
-
-WORKS
+## Works
 
 {% heroicon "outline" "archive" %}
 {% heroicon "solid" "archive" %}
@@ -12,7 +8,7 @@ WORKS
 {% heroicon_solid "archive" %}
 {% heroicon_solid "archive" "with an alt tag" %}
 
-DOESN'T WORK
+## Doesn't work
 
 {% heroicon "invalid-type" "archive" %}
 {% heroicon "outline" "invalid-name" %}
