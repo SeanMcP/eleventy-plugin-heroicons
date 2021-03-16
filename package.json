@@ -23,6 +23,9 @@
     "name": "Sean McPherson",
     "url": "https://seanmcp.com"
   },
+  "repository": "https://github.com/seanmcp/eleventy-plugin-heroicons",
+  "homepage": "https://github.com/seanmcp/eleventy-plugin-heroicons#readme",
+  "bugs": "https://github.com/seanmcp/eleventy-plugin-heroicons/issues",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
