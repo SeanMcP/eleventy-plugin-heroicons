@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2022-03-02
+
+Special thanks to @jamowei for identifying an issue with the heroicons!
+
 ### Added
 
 - Package repository information
