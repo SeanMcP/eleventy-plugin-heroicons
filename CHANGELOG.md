@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Package repository information
 
+### Updated
+
+- Update `heroicons` to `v1.0.6`
+- Update `@11ty/eleventy` to `v1.0.0`
+- Tweaked `markdown.test.md` to make it more consistent with other test files
+
 ## [0.2.0] - 2021-03-09
 
 ### Changed
