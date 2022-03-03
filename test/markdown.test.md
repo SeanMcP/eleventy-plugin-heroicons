@@ -2,7 +2,7 @@
 permalink: markdown.html
 ---
 
-## Works
+WORKS
 
 {% heroicon "outline" "archive" %}
 {% heroicon "solid" "archive" %}
@@ -12,7 +12,7 @@ permalink: markdown.html
 {% heroicon_solid "archive" %}
 {% heroicon_solid "archive" "with an alt tag" %}
 
-## Doesn't work
+DOESN'T WORK
 
 {% heroicon "invalid-type" "archive" %}
 {% heroicon "outline" "invalid-name" %}
