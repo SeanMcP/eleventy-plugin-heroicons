@@ -29,11 +29,14 @@ This plugin adds three shortcodes: `heroicon`, `heroicon_outline`, and `heroicon
 
 ### `heroicon`
 
-Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`
+Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`, `classes?: string`, `dimensions?: string`
 
 ```md
 {% heroicon "outline" "archive" %}
 {% heroicon "solid" "x" "Close menu" %}
+{% heroicon "solid" "exclamation" "Warning", "classNames" %}
+{% heroicon "solid" "chat" "Comments", "classNames", "60" %}
+{% heroicon "solid" "beaker" "", "classNames", "24" %}
 ```
 
 ### `heroicon_outline`/`heroicon_solid`
@@ -42,7 +45,7 @@ Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`
 
 These wrap the `heroicon` shortcode and pass a style.
 
-Args: `name: string`, `alt?: string`
+Args: `name: string`, `alt?: string`, `classes?: string`, `dimensions?: string`
 
 ```md
 {% heroicon_outline "x" "Close menu" %}

@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2022-04-12
+
+### Added
+
+- Classes and dimensions arguments
+
+### Updated
+
+- Updated tests to include classes and dimensions examples
+
 ## [1.0.0] - 2022-03-02
 
 Special thanks to @jamowei for identifying an issue with the heroicons!

@@ -4,13 +4,16 @@ permalink: markdown.html
 
 WORKS
 
-{% heroicon "outline" "archive" %}
-{% heroicon "solid" "archive" %}
-{% heroicon "solid" "archive" "with an alt tag" %}
+{% heroicon "outline", "archive" %}
+{% heroicon "solid", "archive" %}
+{% heroicon "solid", "archive", "with an alt tag" %}
+{% heroicon "solid", "archive", "with an alt tag", "classNames", "40" %}
 {% heroicon_outline "archive" %}
-{% heroicon_outline "archive" "with an alt tag" %}
+{% heroicon_outline "archive", "with an alt tag" %}
+{% heroicon_outline "archive", "with an alt tag", "classNames", "40" %}
 {% heroicon_solid "archive" %}
-{% heroicon_solid "archive" "with an alt tag" %}
+{% heroicon_solid "archive", "with an alt tag" %}
+{% heroicon_solid "archive", "with an alt tag", "classNames", "40" %}
 
 DOESN'T WORK
 
