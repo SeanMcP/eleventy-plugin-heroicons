@@ -29,11 +29,19 @@ This plugin adds three shortcodes: `heroicon`, `heroicon_outline`, and `heroicon
 
 ### `heroicon`
 
-Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`
+Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`, `attributes?: object|string`
 
 ```md
 {% heroicon "outline" "archive" %}
 {% heroicon "solid" "x" "Close menu" %}
+{% heroicon "solid" "x" "Close menu" "width=25 x-data='{ open: false }'" %}
+```
+
+If you are using a templating language that supports object arguments like Nunjucks, then you can replace the attributes string with an object:
+
+```md
+<!-- Nunjucks -->
+{% heroicon "solid", "x", "Close menu", { width: 25, "x-data": "{ open: false }" } %}
 ```
 
 ### `heroicon_outline`/`heroicon_solid`
@@ -42,11 +50,17 @@ Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`
 
 These wrap the `heroicon` shortcode and pass a style.
 
-Args: `name: string`, `alt?: string`
+Args: `name: string`, `alt?: string`, `attributes?: object|string`
+
+```md
+{% heroicon_outline "archive" %}
+{% heroicon_solid "archive" %}
+```
 
 ```md
 {% heroicon_outline "x" "Close menu" %}
 {% heroicon_solid "archive" %}
+{% heroicon_solid "archive" undefined "height=25" %}
 ```
 
 ## Configuration
@@ -54,7 +68,7 @@ Args: `name: string`, `alt?: string`
 `eleventy-plugin-heroicons` offers a few options on a configuration object passed to Eleventy's `addPlugin()`:
 
 - `className?: string` Adds a class to all heroicons
-- `errorOnMissing: boolean` (default: `false`) Throw an error when passed an invalid style/name
+- `errorOnMissing: boolean` (default: `false`) Throw an error when passed an invalid style/name or invalid attribute
 
 Pass the configuration object when adding the plugin:
 
