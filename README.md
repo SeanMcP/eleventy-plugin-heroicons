@@ -1,3 +1,7 @@
+<p style="text-align: center">
+    <img alt="" src="./.github/logo.png" style="max-width: 480px; width: 100%;">
+</p>
+
 # `eleventy-plugin-heroicons`
 
 [![npm](https://img.shields.io/npm/v/eleventy-plugin-heroicons.svg)](https://npmjs.com/package/eleventy-plugin-heroicons) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/eleventy-plugin-heroicons.svg)](https://npmjs.com/package/eleventy-plugin-heroicons) [![npm](https://img.shields.io/npm/dt/eleventy-plugin-heroicons.svg)](https://npmjs.com/package/eleventy-plugin-heroicons)
