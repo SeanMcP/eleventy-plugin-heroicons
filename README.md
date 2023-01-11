@@ -1,4 +1,4 @@
-<p style="text-align: center">
+<p align="center">
     <img alt="" src="./.github/logo.png" style="max-width: 480px; width: 100%;">
 </p>
 
