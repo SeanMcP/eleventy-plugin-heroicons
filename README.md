@@ -1,5 +1,7 @@
 <p align="center">
-    <img alt="" src="./.github/logo.png" style="max-width: 480px; width: 100%;">
+    <a href="https://npm.im/eleventy-plugin-heroicons">
+        <img alt="" src="./.github/logo.png" style="max-width: 480px; width: 100%;">
+    </a>
 </p>
 
 # `eleventy-plugin-heroicons`
