@@ -10,7 +10,7 @@ const FORBIDDEN_ATTRIBUTES = ["aria-hidden", "aria-label"];
 module.exports = function heroicons(eleventyConfig, config = initialConfig) {
   function heroicon(context = this, style, name, alt, attributes) {
     if (!style || !name) {
-      throw new Error("Please provide a style (outline|solid) and name");
+      throw new Error("Please provide a valid icon style and name");
     }
 
     const ofStyle = ICONS[style.toUpperCase()];
@@ -72,6 +72,12 @@ module.exports = function heroicons(eleventyConfig, config = initialConfig) {
   });
   eleventyConfig.addShortcode("heroicon_solid", function (name, alt, attrs) {
     return heroicon(this, "solid", name, alt, attrs);
+  });
+  eleventyConfig.addShortcode("heroicon_micro", function (name, alt, attrs) {
+    return heroicon(this, "micro", name, alt, attrs);
+  });
+  eleventyConfig.addShortcode("heroicon_mini", function (name, alt, attrs) {
+    return heroicon(this, "mini", name, alt, attrs);
   });
 };
 

@@ -29,6 +29,6 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "heroicons": "^1.0.6"
+    "heroicons": "^2.1.5"
   }
 }
