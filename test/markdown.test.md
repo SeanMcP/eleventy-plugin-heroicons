@@ -4,21 +4,32 @@ permalink: markdown.html
 
 WORKS
 
-{% heroicon "outline" "archive" %}
-{% heroicon "solid" "archive" %}
-{% heroicon "solid" "archive" "with an alt tag" %}
-{% heroicon "solid" "archive" "with an alt tag" 'width="25" x-data="{ open: false }"' %}
-{% heroicon "solid" "archive" undefined 'width="25" x-data="{ open: false }"' %}
-{% heroicon_outline "archive" %}
-{% heroicon_outline "archive" "with an alt tag" %}
-{% heroicon_solid "archive" %}
-{% heroicon_solid "archive" "with an alt tag" %}
+| Description             | Icon                                                                                    |
+| ----------------------- | --------------------------------------------------------------------------------------- |
+| micro                   | {% heroicon "micro" "beaker" %}                                                         |
+| mini                    | {% heroicon "mini" "beaker" %}                                                          |
+| outline                 | {% heroicon "outline" "beaker" %}                                                       |
+| solid                   | {% heroicon "solid" "beaker" %}                                                         |
+| solid w/ alt            | {% heroicon "solid" "beaker" "with an alt tag" %}                                       |
+| solid w/ alt & attrs    | {% heroicon "solid" "beaker" "with an alt tag" 'width="25" x-data="{ open: false }"' %} |
+| solid w/o alt w/ attrs  | {% heroicon "solid" "beaker" undefined 'width="25" x-data="{ open: false }"' %}         |
+| heroicon_micro          | {% heroicon_micro "beaker" %}                                                           |
+| heroicon_micro w/ alt   | {% heroicon_micro "beaker" "with an alt tag" %}                                         |
+| heroicon_mini           | {% heroicon_mini "beaker" %}                                                            |
+| heroicon_mini w/ alt    | {% heroicon_mini "beaker" "with an alt tag" %}                                          |
+| heroicon_outline        | {% heroicon_outline "beaker" %}                                                         |
+| heroicon_outline w/ alt | {% heroicon_outline "beaker" "with an alt tag" %}                                       |
+| heroicon_solid          | {% heroicon_solid "beaker" %}                                                           |
+| heroicon_solid w/ alt   | {% heroicon_solid "beaker" "with an alt tag" %}                                         |
 
 DOESN'T WORK
 
-{% heroicon "invalid-type" "archive" %}
-{% heroicon "outline" "invalid-name" %}
-{% heroicon "outline" "archive" undefined 'aria-hidden="true"' %}
-{% heroicon "outline" "archive" undefined 'aria-label="true"' %}
-{% heroicon_outline "invalid-name" %}
-{% heroicon_solid "invalid-name" %}
+| Description                   | Icon                                                             |
+| ----------------------------- | ---------------------------------------------------------------- |
+| invalid type                  | {% heroicon "invalid-type" "beaker" %}                           |
+| invalid name                  | {% heroicon "outline" "invalid-name" %}                          |
+| invalid attr                  | {% heroicon "outline" "beaker" undefined 'aria-hidden="true"' %} |
+| heroicon_micro invalid name   | {% heroicon_micro "invalid-name" %}                              |
+| heroicon_mini invalid name    | {% heroicon_mini "invalid-name" %}                               |
+| heroicon_outline invalid name | {% heroicon_outline "invalid-name" %}                            |
+| heroicon_solid invalid name   | {% heroicon_solid "invalid-name" %}                              |
