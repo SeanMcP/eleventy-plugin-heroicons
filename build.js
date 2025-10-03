@@ -1,19 +1,22 @@
 const fs = require("fs");
 
 const CONTENTS = {
-  OUTLINE: {},
+  MICRO: {},
+  MINI: {},
   SOLID: {},
+  OUTLINE: {},
   HEAD: {},
   TAIL: "",
 };
 
-const subDirs = ["outline", "solid"];
+const subDirs = [["16/solid", "MICRO"], ["20/solid", "MINI"], ["24/outline", "OUTLINE"], ["24/solid", "SOLID"]];
 
 subDirs.forEach((subDir) => {
-  const path = `./node_modules/heroicons/${subDir}/`;
+  const [dirPath, style] = subDir;
+  const path = `./node_modules/heroicons/${dirPath}/`;
   const fileNames = fs.readdirSync(path);
 
-  const object = CONTENTS[subDir.toUpperCase()];
+  const object = CONTENTS[style];
 
   fileNames.forEach((filename) => {
     const contents = fs
@@ -21,8 +24,8 @@ subDirs.forEach((subDir) => {
       .toString()
       .trimEnd();
     const lines = contents.split("\n");
-    if (!CONTENTS.HEAD[subDir]) {
-      CONTENTS.HEAD[subDir] = lines[0].replace(/ aria-hidden="true"/g, "");
+    if (!CONTENTS.HEAD[style]) {
+      CONTENTS.HEAD[style] = lines[0].replace(/ aria-hidden="true"/g, "");
     }
     if (!CONTENTS.TAIL) {
       CONTENTS.TAIL = lines[lines.length - 1];

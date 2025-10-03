@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-heroicons",
-  "version": "1.1.0",
+  "version": "2.1.5",
   "description": "Shortcodes to add Heroicons to your Eleventy projects",
   "main": "heroicons.js",
   "files": [
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "node build.js",
-    "test": "eleventy --config test/.eleventy.js --input test/ --output test/runs/",
+    "test": "rm -rf test/runs && eleventy --config test/.eleventy.js --input test/ --output test/runs/",
     "postversion": "git push && git push --tags"
   },
   "keywords": [
@@ -29,6 +29,6 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "heroicons": "^1.0.6"
+    "heroicons": "^2.1.5"
   }
 }

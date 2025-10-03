@@ -29,12 +29,12 @@ This plugin adds three shortcodes: `heroicon`, `heroicon_outline`, and `heroicon
 
 ### `heroicon`
 
-Args: `style: ("outline"|"solid")`, `name: string`, `alt?: string`, `attributes?: object|string`
+Args: `style: ("solid"|"outline"|"mini"|"micro")`, `name: string`, `alt?: string`, `attributes?: object|string`
 
 ```md
 {% heroicon "outline" "archive" %}
-{% heroicon "solid" "x" "Close menu" %}
-{% heroicon "solid" "x" "Close menu" "width=25 x-data='{ open: false }'" %}
+{% heroicon "mini" "x" "Close menu" %}
+{% heroicon "micro" "x" "Close menu" "width=25 x-data='{ open: false }'" %}
 ```
 
 If you are using a templating language that supports object arguments like Nunjucks, then you can replace the attributes string with an object:
@@ -44,23 +44,17 @@ If you are using a templating language that supports object arguments like Nunju
 {% heroicon "solid", "x", "Close menu", { width: 25, "x-data": "{ open: false }" } %}
 ```
 
-### `heroicon_outline`/`heroicon_solid`
+### Style-specific shortcodes
 
-**⚠️ Warning**: These APIs are subject to change in future releases.
-
-These wrap the `heroicon` shortcode and pass a style.
+Convenience shortcodes for various icon styles
 
 Args: `name: string`, `alt?: string`, `attributes?: object|string`
 
 ```md
-{% heroicon_outline "archive" %}
-{% heroicon_solid "archive" %}
-```
-
-```md
-{% heroicon_outline "x" "Close menu" %}
-{% heroicon_solid "archive" %}
-{% heroicon_solid "archive" undefined "height=25" %}
+{% heroicon_solid "star" %}
+{% heroicon_outline "star" %}
+{% heroicon_mini "star" %}
+{% heroicon_micro "star" %}
 ```
 
 ## Configuration
@@ -87,7 +81,7 @@ module.exports = eleventyConfig => {
 The `svg` element receives two data attributes that you can use for styling:
 
 - `data-heroicon-name="string"`
-- `data-heroicon-style="(outline|solid)"`
+- `data-heroicon-style="(solid|outline|mini|micro)"`
 
 You could add the following to your stylesheets:
 
