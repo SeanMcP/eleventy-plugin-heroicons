@@ -7,6 +7,8 @@ and this project mirrors [heroicons](https://github.com/tailwindlabs/heroicons) 
 
 ## [Unreleased]
 
+## [2.1.5] - 2025-10-03
+
 - Changed package versioning
 - Updated to `heroicons@2.1.5`
 - Added "mini" and "micro" icons
